@@ -13,11 +13,9 @@ export default function GlobalStyles() {
         body {
           background-color: #fcef87;
           font-size: 16px;
-          padding: 0px;
+          padding: 0;
           margin: 0;
           font-family: "Alatsi", sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
         }
       `}
     />
