@@ -2,7 +2,6 @@ import React from "react";
 import styled from "@emotion/styled";
 import search from "../assets/search.svg";
 import close from "../assets/close.svg";
-import { keyframes } from "@emotion/core";
 
 // const spin =
 
