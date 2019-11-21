@@ -2,7 +2,6 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const HeadLine = styled.h1`
-  text-align: center;
   margin: 0;
   text-shadow: 2px 2px 2px #fcef87;
   letter-spacing: 4px;
