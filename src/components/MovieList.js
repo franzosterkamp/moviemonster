@@ -13,11 +13,11 @@ const Poster = styled.img`
   margin: 5px;
 `;
 
-export default function MovieList() {
+export default function MovieList({ searchValue }) {
   const [movies, setMovies] = React.useState([]);
 
   async function refreshMovies() {
-    const discoveredMovies = await searchMoives("pokem");
+    const discoveredMovies = await searchMoives(searchValue);
     setMovies(discoveredMovies);
   }
 
