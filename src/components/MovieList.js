@@ -1,5 +1,5 @@
 import React from "react";
-import { getDiscoverMoives } from "../api/movies";
+import { searchMoives } from "../api/movies";
 import styled from "@emotion/styled";
 
 const MovieTag = styled.div`
@@ -17,7 +17,7 @@ export default function MovieList() {
   const [movies, setMovies] = React.useState([]);
 
   async function refreshMovies() {
-    const discoveredMovies = await getDiscoverMoives();
+    const discoveredMovies = await searchMoives("pokem");
     setMovies(discoveredMovies);
   }
 
