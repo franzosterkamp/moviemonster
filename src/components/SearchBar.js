@@ -12,5 +12,13 @@ const SearchBar = styled.input`
 `;
 
 export default function Search() {
-  return <SearchBar placeholder="Enter Moviename"></SearchBar>;
+  const [searchValue, setSearchValue] = React.useState();
+
+  return (
+    <SearchBar
+      placeholder="Enter Moviename"
+      value={searchValue}
+      onChange={event => setSearchValue(event.target.value)}
+    ></SearchBar>
+  );
 }
